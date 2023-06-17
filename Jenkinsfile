@@ -3,14 +3,16 @@ pipeline {
     agent any 
     parameters {
 
-        string(name: 'name', defaultValue: 'enter name ' )
+        string(name: 'name', defaultValue: ' ' )
+        string(name: 'place', defaultValue: ' ' )
        
     }
     
     stages {
         stage('checkout') {
             steps {
-                   sh 'hi ${name} , welcome to jenkins'
+                 
+                   sh 'sh 1.txt.sh'
             }
         }
     }

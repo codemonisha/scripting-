@@ -3,8 +3,8 @@ pipeline {
     agent any 
     parameters {
 
-        string(name: 'words', defaultValue: 'enter name ' )
-        string(name: 'words', defaultValue: 'enter place ' )
+        string(name: 'name', defaultValue: 'enter name ' )
+        string(name: 'place ', defaultValue: 'enter place ' )
     }
     
     stages {

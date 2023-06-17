@@ -2,8 +2,9 @@
 pipeline {
     agent any 
     parameters {
-        choice(name: 'number1', choices: [ '1', '2', '3' ] )
-        string(name: 'words', defaultValue: 'test' )
+
+        string(name: 'words', defaultValue: 'enter name ' )
+        string(name: 'words', defaultValue: 'enter place ' )
     }
     
     stages {

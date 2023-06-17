@@ -3,8 +3,8 @@ pipeline {
     agent any 
     parameters {
 
-        string(name: 'name', defaultValue: ' ' )
-        string(name: 'place', defaultValue: ' ' )
+        string(name: 'n', defaultValue: ' ' )
+
        
     }
     
@@ -12,7 +12,7 @@ pipeline {
         stage('checkout') {
             steps {
                  
-                   sh 'sh para.sh'
+                   sh 'sh cal.sh'
             }
         }
     }

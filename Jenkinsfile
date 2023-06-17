@@ -12,7 +12,7 @@ pipeline {
         stage('checkout') {
             steps {
                  
-                   sh 'sh 1.txt.sh'
+                   sh 'sh para.sh'
             }
         }
     }
